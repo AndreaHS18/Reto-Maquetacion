@@ -29,7 +29,7 @@ function cargarDatos() {
 
                     divSold.appendChild(availableInmueble);
 
-                    const nameInmueble = document.createElement('H1');
+                    const nameInmueble = document.createElement('H2');
                     nameInmueble.textContent = name;
                     nameInmueble.classList.add('name');
 
@@ -42,6 +42,7 @@ function cargarDatos() {
 
                     const divRow = document.createElement('DIV');
                     divRow.classList.add('div-row');
+                    divRow.classList.add('div-row-location');
 
                     divCardBody.appendChild(divRow);
 
@@ -71,6 +72,7 @@ function cargarDatos() {
                     const textoPrecioInmueble = document.createElement('P');
                     textoPrecioInmueble.textContent = "Desde";
                     textoPrecioInmueble.classList.add('txt');
+                    textoPrecioInmueble.classList.add('txtDesde');
 
                     const precioInmueble = document.createElement('P');
                     precioInmueble.textContent = "$ 1,940,000 MXN";
@@ -78,6 +80,7 @@ function cargarDatos() {
 
                     const nombreLugarInmueble = document.createElement('P');
                     nombreLugarInmueble.textContent = name + " " + "-" + " " + location;
+                    nombreLugarInmueble.classList.add('location');
 
                     divPrecio.appendChild(textoPrecioInmueble);
                     divPrecio.appendChild(precioInmueble);
