@@ -1,0 +1,60 @@
+.card {
+    width: 45%;
+}
+.sold {
+    display: flex;
+    width: 200px;
+    background-color: #9F2222;
+    color: white;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+    justify-content: center;
+    border-radius: 10px 0px 0px 10px;
+    flex-direction: row-reverse;
+}
+.available {
+    align-items: center;
+    margin: 0 auto;
+}
+.name {
+
+}
+.description {
+
+}
+.div-row {
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+}
+.fa-solid {
+    color: #46A4B3;
+}
+.location {
+    padding: 20px;
+}
+.precio {
+    color: #46A4B3;
+    font-weight: bold;
+}
+.mainImage {
+    width: 200px;
+    height: 300px;
+}
+.div-info {
+    display: grid;
+    grid-column: 1;
+    gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+}
+.div-num {
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+}
+.totalArea, .terrace, .rooms {
+    
+}
+.txt {
+    margin: 0;
+}
