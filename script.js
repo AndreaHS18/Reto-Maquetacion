@@ -15,15 +15,13 @@ function cargarDatos() {
                     divCard.appendChild(divCardBody);
 
                     const divSold = document.createElement('DIV');
-                    divSold.classList.add('sold');
 
                     divCardBody.appendChild(divSold);
 
                     const availableInmueble = document.createElement('P');
-                    if(available === true) {
-                        availableInmueble.textContent = "Disponible";
-                    } else {
+                    if(available !== true) {
                         availableInmueble.textContent = "Vendido";
+                        divSold.classList.add('sold');
                     }
                     availableInmueble.classList.add('available');
 

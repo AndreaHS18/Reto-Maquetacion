@@ -45,7 +45,13 @@
 }
 .mainImage {
     width: 100%;
-    height: 30rem;
+    height: 15rem;
+}
+@media(min-width: 768px) {
+    .mainImage {
+        width: 100%;
+        height: 30rem;
+    }
 }
 .div-info {
     display: grid;
