@@ -1,6 +1,12 @@
 .card {
-    width: 45%;
+    width: 90%;
     margin: 1.5rem;
+}
+@media(min-width: 768px) {
+    .card {
+        width: 45%;
+        margin: 1.5rem;
+    }
 }
 .sold {
     display: flex;

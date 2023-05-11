@@ -4,7 +4,7 @@ function cargarDatos() {
             .then(respuesta => respuesta.json()) //Se indica el formato para obtener la información
             .then(inmuebles => {
                 inmuebles.forEach(inmueble => {
-                    const {name, description, location, totalArea, mainImage, terrace, rooms, available} = inmueble;
+                    const { name, description, location, totalArea, mainImage, terrace, rooms, available } = inmueble;
 
                     const divCard = document.createElement('DIV');
                     divCard.classList.add('card');
@@ -19,7 +19,7 @@ function cargarDatos() {
                     divCardBody.appendChild(divSold);
 
                     const availableInmueble = document.createElement('P');
-                    if(available !== true) {
+                    if (available !== true) {
                         availableInmueble.textContent = "Vendido";
                         divSold.classList.add('sold');
                     }
@@ -117,7 +117,7 @@ function cargarDatos() {
 
                     divNumTotal.appendChild(totalAreaInmueble);
                     divNumTotal.appendChild(textoTotalInmueble);
-                    
+
                     // TERRAZA
                     const divRowTerraza = document.createElement('DIV');
                     divRowTerraza.classList.add('div-row');
@@ -136,7 +136,7 @@ function cargarDatos() {
                     divRowTerraza.appendChild(divNumTerraza);
 
                     const terraceInmueble = document.createElement('P');
-                    terraceInmueble.textContent = totalArea + "m^2";
+                    terraceInmueble.textContent = terrace + "m^2";
                     terraceInmueble.classList.add('terrace');
                     terraceInmueble.classList.add('txt');
 
@@ -146,7 +146,7 @@ function cargarDatos() {
 
                     divNumTerraza.appendChild(terraceInmueble);
                     divNumTerraza.appendChild(textoTerrazaInmueble);
-                    
+
                     // RECAMARAS
                     const divRowRooms = document.createElement('DIV');
                     divRowRooms.classList.add('div-row');
